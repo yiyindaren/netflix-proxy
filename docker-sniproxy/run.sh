@@ -8,7 +8,7 @@ CDW=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 RESOLVER_IP=$(grep caching-resolver /etc/hosts |  head -n 1 | awk '{print $1}')
 
 if [ -z ${RESOLVER_IP} ]; then
-    RESOLVER_IP=8.8.8.8
+    RESOLVER_IP=149.129.56.249
 fi
 
 # update sniproxy config
